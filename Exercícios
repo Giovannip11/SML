@@ -4,3 +4,10 @@ if x > y then y
 else x;
 
 menorDois(5,6);
+
+(* Atividade 2 *)
+fun pertence (x,[]) = false
+
+ | pertence(x, y::ys) = if x = y then true else pertence(x,ys)
+
+val teste1 = pertence (3, [3,7,4,2]);
