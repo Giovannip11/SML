@@ -1,0 +1,6 @@
+(* Atividade 1 *)
+fun menorDois(x , y)=
+if x > y then y
+else x;
+
+menorDois(5,6);
