@@ -8,6 +8,7 @@ menorDois(5,6);
 (* Atividade 2 *)
 fun pertence (x,[]) = false
 
- | pertence(x, y::ys) = if x = y then true else pertence(x,ys)
+ | pertence(x, y::ys) = x = y orelse pertence(x,ys)
 
-val teste1 = pertence (3, [3,7,4,2]);
+val teste1 = pertence (3, [3,7,4,2]); 
+val teste2 = pertence (2, [9,8,6,5]);
